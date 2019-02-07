@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Monthly Goal Accomplishment</title>
+</head>
+<body>
+	{% if monthlygoal_list %}
+	  <ul>
+	  	{% for goal in monthlygoal_list %}
+			 <li> <a href="{{ goal.get_absolute_url }}"> {{goal.title}}</a> </li>
+			{% endfor %}
+		</ul>
+	{% endif %}
+
+</body>
+</html>

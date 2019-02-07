@@ -4,7 +4,7 @@ from . models import DailyGoal, MonthlyGoal
 
 @admin.register(DailyGoal)
 class DailyAdmin(admin.ModelAdmin):
-  list_display = ['name', 'date', 'day',  'task' ]
+  list_display = ['title', 'date', 'day',  'task' ]
 
 @admin.register(MonthlyGoal)
 class MonthlyAdmin(admin.ModelAdmin):
